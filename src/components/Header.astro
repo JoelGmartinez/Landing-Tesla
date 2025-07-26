@@ -2,22 +2,20 @@
 import Logo from "./Logo.astro"
 ---
 
-<header
-  id="landing-header"
-  class="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40"
->
+<header id="landing-header"
+  class="  py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40">
   <div class="flex flex-grow basis-0">
     <a href="./"><Logo /></a>
   </div>
 
-  <nav class="hidden xl:block sm:hidden">
+  <nav class="hidden xl:block sm:hidden header1">
     <ul
       class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
     >
-      <li><a href="#model-s">Model S</a></li>
-      <li><a href="#model-3">Model 3</a></li>
-      <li><a href="#model-x">Model X</a></li>
       <li><a href="#model-y">Model Y</a></li>
+      <li><a href="#model-3">Model 3</a></li>
+      <li><a href="#model-s">Model S</a></li>
+      <li><a href="#model-x">Model X</a></li>
       <li><a href="#powerwall">Powerwall</a></li>
       <li><a href="#accesorios">Carga</a></li>
     </ul>
@@ -25,35 +23,18 @@ import Logo from "./Logo.astro"
 
   <nav class="flex flex-grow justify-end basis-0">
     <ul
-      class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
-    >
-      <li class="hidden xl:block sm:hidden"><a href="#"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-help"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 17l0 .01" /><path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" /></svg></a></li>
-      <li class="hidden xl:block sm:hidden"><a href="#"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-world"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg></a></li>
-      <li><a id="menu-btn" href="#"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 6h10" /><path d="M4 12h16" /><path d="M7 12h13" /><path d="M4 18h10" /></svg></a></li>
+      class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+      <li class="hidden xl:block sm:hidden"><a href="#"><svg width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-help"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M12 17l0 .01" /><path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" /></svg></a></li>
+      <li class="hidden xl:block sm:hidden"><a href="#"><svg width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-world"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg></a></li>
+      <li><a id="menu-btn" href="#"><svg width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 6h10" /><path d="M4 12h16" /><path d="M7 12h13" /><path d="M4 18h10" /></svg></a></li>
     </ul>
   </nav>
 
-  <!-- <nav id="modal-menu" class="xl:hidden flex flex-col bg-white fixed top-0 left-0 right-0 bottom-0 ">
-    <button id="close-btn" class=" w-screen flex justify-end p-5">
-      <img  class="text-black h-6 " src="/close-icon.svg" alt="close image">
-    </button>
-      <ul
-      class="flex flex-col mt-4 [&>li>a]:transition-colors [&>li]:m-3  [&>li>a]:flex [&>li>a]:justify-between [&>li>a]:duration-200 [&>li>a]:text-black [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-6 [&>li>a]:py-3 [&>li>a]:rounded-md [&>li>a]:w-full"
-      >
-        <li><a class="hover:bg-slate-100" href="#home"> Home <img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a> </li>
-        <li><a class="hover:bg-slate-100" href="#model-s">Model S<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
-        <li><a class="hover:bg-slate-100" href="#model-3">Model 3<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
-        <li><a class="hover:bg-slate-100" href="#model-x">Model X<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
-        <li><a class="hover:bg-slate-100" href="#model-y">Model Y<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
-        <li><a class="hover:bg-slate-100" href="#powerwall">Powerwall<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
-        <li><a class="hover:bg-slate-100" href="#accesorios">Carga<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
-    </ul>
-  </nav> -->
-
+<!-- Elemento que hace el Hover -->
   <div
     id="menu-backdrop"
     class={`
-      absolute bg-black/5 backdrop-blur-lg rounded
+      absolute bg-black/20 backdrop-blur-lg rounded
       translate-x-[var(--left)] translate-y-[var(--top)]
       left-0 top-0
       w-[var(--width)] h-[var(--height)]
@@ -64,30 +45,134 @@ import Logo from "./Logo.astro"
   </div>
 </header>
 
-<!-- <script >
-  const menuBtn = document.getElementById('menu-btn');
-  const modalMenu = document.querySelector("#modal-menu")
-  const menuItems = modalMenu.querySelectorAll('li>a ');
-  const closeBtn = document.querySelector("#close-btn")
-  
-  function toggleDropdownMenu() {
-    modalMenu.classList.toggle('hidden');
+<header id="landing-header" class="header">
+        <nav class="nav-container flex flex-grow basis-0">
+            <!-- <a href="./"><Logo /></a> -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            
+            <label for="menu-toggle" class="hamburger">
+                <svg width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-3"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 6h10" /><path d="M4 12h16" /><path d="M7 12h13" /><path d="M4 18h10" /></svg>
+            </label>
+
+            <ul class="nav-menu flex flex-col [&>li>a]:transition-colors [&>li>a]:inline-block [&>li>a]:text-current [&>li>a]:justify-between [&>li>a]:duration-200 [&>li>a]:font-medium [&>li>a]:rounded-md [&>li>a]:w-full">
+              <li><a href="#model-y">Model Y<img class="h-5" src="/arrow-icon.svg"></a></li>
+              <li><a href="#model-3">Model 3<img class="h-5" src="/arrow-icon.svg"></a></li>
+              <li><a href="#model-s">Model S<img class="h-5" src="/arrow-icon.svg"></a></li>
+              <li><a href="#model-x">Model X<img class="h-5" src="/arrow-icon.svg"></a></li>
+              <li><a href="#powerwall">Powerwall<img class="h-5" src="/arrow-icon.svg"></a></li>
+              <li><a href="#accesorios">Carga<img class="h-5" src="/arrow-icon.svg"></a></li>
+          </ul>
+        </nav>
+    </header>
+
+
+<style>
+  .header {
+  display: none;
+  position: fixed;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.hamburger {
+  cursor: pointer;
+  color: transparent;
+   position: fixed;
+  top:20px;
+  right: 56px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle:checked ~ .nav-menu {
+  transform: translateX(0);
+}
+
+@media (max-width: 1300px) {
+
+  .header1{
+    display: none;
+  }
+
+  .header{
+    display: block ;
+    background-color: #ffffff00;
+    width: 100%;
+    z-index: 100;
+    padding: 30px 12px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger {
+    display: flex;
+    border-radius: 20px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: calc(80vh - 80px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-menu li {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(50px);
+    z-index: 100;
+    width: 100%;
+    animation: slideInRight 0.3s ease forwards;
+  }
+
+  .nav-menu a {
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 0.1rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
   }
 
 
-  menuBtn.addEventListener('click',toggleDropdownMenu)
+  .nav-menu a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(10px);
+  }
 
-  closeBtn.addEventListener('click',toggleDropdownMenu)
+}
 
-  menuItems.forEach(Item => {
-    Item.addEventListener('click',toggleDropdownMenu);
-});
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+</style>
 
-
-
-</script> -->
-
-
+<!-- Hover del Menú -->
 <script>
   const listItem = document.querySelectorAll("#landing-header li")
   const menuBackDrop = document.querySelector("#menu-backdrop") as HTMLElement
@@ -112,13 +197,14 @@ import Logo from "./Logo.astro"
   })
 </script>
 
-<script>
+<!-- Color del menú y los titulos -->
+<script> 
   const headerEl = document.querySelector("#landing-header") as HTMLElement
 
   const observerOptions = {
     root: null,
     rootMargin: "0px", // en cuanto se vea el elemento
-    threshold: 0.9, // porcentaje de visibilidad
+    threshold: 0.9, 
   }
 
   const observer = new IntersectionObserver((entries) => {

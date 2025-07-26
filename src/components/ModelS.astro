@@ -5,16 +5,16 @@ import Section from "./Section.astro";
 <Section
   title="Model S"
   subtitle="Concertar una Prueba de Conducción"
-  color="black"
+  color="white"
 >
   <div slot="subtitle">
-		<a class="text-sm text-black underline">
+		<a class="text-sm text-white underline">
 			Programe una consulta virtual
 		</a>
 	</div>
-  <div slot="footer" class="flex justify-center gap-x-6">
+  <div slot="footer" class="footer gap-x-6 flex mx-auto">
     <a
-      class="bg-gray-800 text-sm rounded font-medium text-white px-12 py-2 inline-block"
+      class="border-[3px] border-black bg-black text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:bg-white hover:text-black"
       href="#">Pedido personalizado</a
     >
     <a
@@ -25,8 +25,9 @@ import Section from "./Section.astro";
 
  <img
   	 slot="background"
+     id="model-s"
       class="object-cover object-center h-full w-full"
-      src="/model-s.webp"
+      src="https://images.pexels.com/photos/13236696/pexels-photo-13236696.jpeg"
       alt="Modelo S"
     />
 </Section>
